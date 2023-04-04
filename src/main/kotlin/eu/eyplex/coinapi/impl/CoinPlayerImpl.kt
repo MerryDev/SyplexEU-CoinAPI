@@ -47,7 +47,7 @@ class CoinPlayerImpl(private val uuid: UUID) : CoinPlayer {
     }
 
     override fun addCoins(amount: Int) {
-        setCoins(coins + amount)
+        setCoinsAsync(coins + amount)
     }
 
     override fun removeCoins(amount: Int) {
